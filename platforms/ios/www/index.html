@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Capture Photo</title>
+        <meta name="viewport" content="width=device-width, user-scalable=no"/>
+        <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+        <link rel='stylesheet' href='css/index.css'/>
+        <script type="text/javascript" charset="utf-8" src="js/camera.js"></script>
+
+    </head>
+    <body style="padding-top: 100px;">
+        <div class="edge2edge-button" onclick="capturePhoto();"><span>Capture Photo</span></div> <br>
+        <div class="edge2edge-button" onclick="capturePhotoEdit();"><span>Capture Editable Photo</span></div> <br>
+        <div class="edge2edge-button" onclick="getPhoto(pictureSource.PHOTOLIBRARY);"><span>From Photo Library</span></div><br>
+        <div class="edge2edge-button" onclick="getPhoto(pictureSource.SAVEDPHOTOALBUM);"><span>From Photo Album</span></div><br>
+        <img style="display:none;width:320px;" id="smallImage" src="" />
+        <img style="display:none;width:320px;" id="largeImage" src="" />
+    </body>
+</html>
